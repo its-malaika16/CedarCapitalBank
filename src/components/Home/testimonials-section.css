@@ -1,0 +1,185 @@
+/* ===== Section ===== */
+
+.testimonials {
+  background: var(--primary);
+  padding: 80px 20px;
+}
+
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== Header ===== */
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.section-header span {
+  color: #e12528;
+}
+
+.section-header p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1rem;
+}
+
+/* ===== Cards ===== */
+
+.testimonial-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.testimonial-card {
+  background: #F1F0F3;
+  border-radius: 28px;
+  padding: 40px;
+}
+
+.testimonial-quote {
+  color: #163d72;
+  font-size: 26px;
+  line-height: 1.7;
+  max-width: 950px;
+  margin-bottom: 25px;
+}
+
+.company-name {
+  color: #163d72;
+  font-size: 35px;
+  margin-bottom: 35px;
+  font-weight: 700;
+}
+
+/* ===== Stats ===== */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.check {
+  color: #e12528;
+  font-size: 18px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.stat-item p {
+  color: #163d72;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* ===== Large Laptop ===== */
+
+@media (max-width: 1200px) {
+  .testimonial-card {
+    padding: 35px;
+  }
+
+  .stats-grid {
+    gap: 20px;
+  }
+}
+
+/* ===== Tablet ===== */
+
+@media (max-width: 992px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .testimonial-card {
+    padding: 32px;
+  }
+
+  .testimonial-quote {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 1.4rem;
+  }
+}
+
+/* ===== Mobile ===== */
+
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 60px 16px;
+  }
+
+  .testimonial-card {
+    padding: 24px;
+    border-radius: 20px;
+  }
+
+  .company-name {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .testimonial-quote {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 1.2rem;
+  }
+
+  .stat-item p {
+    font-size: 0.9rem;
+  }
+}
+
+/* ===== Small Mobile ===== */
+
+@media (max-width: 480px) {
+  .section-header {
+    margin-bottom: 35px;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+  }
+
+  .testimonial-quote {
+    font-size: 1rem;
+  }
+
+  .company-name {
+    font-size: 1.1rem;
+  }
+}
+
+/* ===== 2K / 4K Screens ===== */
+
+@media (min-width: 1600px) {
+  .testimonials-container {
+    max-width: 1400px;
+  }
+
+  .testimonial-card {
+    padding: 50px;
+  }
+
+  .section-header h2 {
+    font-size: 4rem;
+  }
+}

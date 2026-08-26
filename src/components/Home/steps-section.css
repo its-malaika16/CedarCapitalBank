@@ -1,0 +1,202 @@
+.get-started {
+  padding: 100px 20px;
+  background: #fff;
+}
+
+.get-started-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* =========================
+   Heading
+========================= */
+
+.section-heading {
+max-width: 800px;
+  text-align: center;
+  margin: 0 auto 70px;
+}
+
+.section-heading h2 {
+  font-size: 50px;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 18px;
+  line-height: 1.1;
+}
+
+.section-heading span{
+    color: var(--secondary);
+}
+
+.section-heading p {
+  color: #52606d;
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  line-height: 1.7;
+}
+
+/* =========================
+   Cards
+========================= */
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.step-card {
+  background: #F1F0F3;
+  border: 1px solid #ebe5dc;
+  border-radius: 28px;
+
+  padding: 34px;
+
+  transition: 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.icon-box {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 28px;
+}
+
+.icon-box img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.step-number {
+  display: block;
+  color: #9aa8a5;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.step-card h3 {
+  color: var(--primary);
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.step-card p {
+  color: var(--primary);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* =========================
+   Laptop
+========================= */
+
+@media (max-width: 1200px) {
+  .step-card {
+    padding: 28px;
+  }
+
+  .step-card h3 {
+    font-size: 1.75rem;
+  }
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 992px) {
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 768px) {
+  .get-started {
+    padding: 70px 16px;
+  }
+
+  .section-heading {
+    margin-bottom: 40px;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .step-card {
+    padding: 24px;
+  }
+
+  .step-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .step-card p {
+    font-size: 0.95rem;
+  }
+
+  .icon-box {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+/* =========================
+   Small Mobile
+========================= */
+
+@media (max-width: 480px) {
+  .section-heading h2 {
+    font-size: 2rem;
+  }
+
+  .section-heading p {
+    font-size: 0.95rem;
+  }
+
+  .step-card {
+    border-radius: 22px;
+  }
+
+  .step-card h3 {
+    font-size: 1.35rem;
+  }
+}
+
+/* =========================
+   Large Screens
+========================= */
+
+@media (min-width: 1600px) {
+  .get-started-container {
+    max-width: 1500px;
+  }
+
+  .steps-grid {
+    gap: 40px;
+  }
+
+  .step-card {
+    padding: 40px;
+  }
+}

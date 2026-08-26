@@ -1,0 +1,180 @@
+/* ===== Section ===== */
+
+.support-section {
+  width: 100%;
+  padding: 100px 20px;
+  background: #fafafa;
+}
+
+.support-container {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+/* ===== Content ===== */
+
+.support-content {
+  max-width: 450px;
+}
+
+.support-content h2 {
+  color: #173b71;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 18px;
+}
+
+.support-content p {
+  color: #173b71;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.support-btn {
+  border: none;
+  background: #df2326;
+  color: white;
+
+  padding: 14px 28px;
+  border-radius: 999px;
+
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.support-btn:hover {
+  background: #c81f22;
+  transform: translateY(-2px);
+}
+
+/* ===== Image ===== */
+
+.support-image {
+  display: flex;
+  justify-content: center;
+}
+
+.support-image img {
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 1 / 1;
+
+  object-fit: cover;
+  border-radius: 34px;
+  display: block;
+}
+
+/* ===== Large Desktop ===== */
+
+@media (min-width: 1600px) {
+  .support-container {
+    max-width: 1500px;
+  }
+
+  .support-image img {
+    max-width: 650px;
+  }
+}
+
+/* ===== Laptop ===== */
+
+@media (max-width: 1200px) {
+  .support-container {
+    gap: 50px;
+  }
+}
+
+/* ===== Tablet ===== */
+
+@media (max-width: 992px) {
+  .support-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .support-content {
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .support-image {
+    order: -1;
+  }
+
+  .support-image img {
+    max-width: 500px;
+  }
+}
+
+/* ===== Mobile ===== */
+
+@media (max-width: 768px) {
+  .support-section {
+    padding: 70px 16px;
+  }
+
+  .support-container {
+    gap: 35px;
+  }
+
+  .support-content h2 {
+    margin-bottom: 14px;
+  }
+
+  .support-content p {
+    margin-bottom: 24px;
+  }
+
+  .support-btn {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .support-image img {
+    border-radius: 24px;
+  }
+}
+
+/* ===== Small Mobile ===== */
+
+@media (max-width: 480px) {
+  .support-content h2 {
+    font-size: 2rem;
+  }
+
+  .support-content p {
+    font-size: 0.95rem;
+  }
+
+  .support-btn {
+    padding: 13px 20px;
+    font-size: 0.95rem;
+  }
+
+  .support-image img {
+    border-radius: 20px;
+  }
+}
+
+/* ===== Ultra Small Devices ===== */
+
+@media (max-width: 360px) {
+  .support-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .support-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,169 @@
+.customer-stats {
+  width: 100%;
+  padding: 80px 20px;
+  background: #F1F0F3;
+}
+
+.stats-container {
+  max-width: 1300px;
+  margin: 0 auto;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(4, 31, 83, 0.95) 0%,
+      rgba(7, 56, 127, 0.7) 40%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    url("/assets/images/globe.svg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 32px;
+  overflow: hidden;
+
+  min-height: 380px;
+
+  display: flex;
+  align-items: center;
+}
+
+.stats-content {
+  max-width: 650px;
+  padding: 60px 70px;
+}
+
+.stats-content h2 {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.15;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+.stats-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stats-content li {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.stats-content li::before {
+  content: "✓";
+  color: #ffffff;
+  margin-right: 12px;
+  font-weight: 700;
+}
+
+/* ======================
+   Laptop
+====================== */
+
+@media (max-width: 1200px) {
+  .stats-content {
+    padding: 50px;
+  }
+
+  .stats-container {
+    min-height: 340px;
+  }
+
+  .stats-content h2{
+    font-size: 25px;
+  }
+}
+
+/* ======================
+   Tablet
+====================== */
+
+@media (max-width: 992px) {
+  .stats-container {
+    min-height: auto;
+  }
+
+  .stats-content {
+    padding: 50px 40px;
+    max-width: 100%;
+  }
+
+  .stats-content h2 br {
+    display: none;
+  }
+}
+
+/* ======================
+   Mobile
+====================== */
+
+@media (max-width: 768px) {
+  .customer-stats {
+    padding: 60px 16px;
+  }
+
+  .stats-container {
+    border-radius: 24px;
+  }
+
+  .stats-content {
+    padding: 40px 25px;
+  }
+
+  .stats-content h2 {
+    margin-bottom: 25px;
+      font-size: 20px;
+  }
+
+  .stats-content li {
+    font-size: 1rem;
+  }
+}
+
+/* ======================
+   Small Mobile
+====================== */
+
+@media (max-width: 480px) {
+  .stats-content {
+    padding: 32px 20px;
+  }
+
+  .stats-content h2 {
+    font-size: 22px;
+    line-height: 1.25;
+  }
+
+  .stats-content li {
+    font-size: 0.95rem;
+  }
+}
+
+/* ======================
+   Large Screens / 4K
+====================== */
+
+@media (min-width: 1200px) {
+  .stats-container {
+    max-width: 1500px;
+    min-height: 250px;
+  }
+
+  .stats-content {
+    max-width: 800px;
+    padding: 80px;
+  }
+
+  .stats-content h2 {
+    font-size: 30px;
+  }
+}
