@@ -1,0 +1,187 @@
+
+/* =========================
+   SECTION
+========================= */
+
+.banking-hero {
+  padding: 80px 20px;
+  background: #f8f8f8;
+}
+
+.banking-hero-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  background: var(--primary);
+  border-radius: 34px;
+  padding: 80px 70px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  min-height: 500px;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.hero-tag {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 28px;
+  display: block;
+  color: var(--secondary);
+}
+
+.banking-hero h1 {
+  color: #ffffff;
+  font-size: 60px;
+  line-height: 1.1;
+  font-weight: 700;
+  max-width: 700px;
+  margin-bottom: 24px;
+}
+
+.banking-hero p {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 1000px;
+  margin-bottom: 32px;
+}
+
+.hero-btn {
+  border: none;
+  background: #e11d24;
+  color: white;
+
+  padding: 15px 30px;
+  border-radius: 999px;
+  width: fit-content;
+
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #c9181e;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   LARGE DESKTOP
+========================= */
+
+@media (min-width: 1600px) {
+  .banking-hero-container {
+    max-width: 1500px;
+    padding: 100px 90px;
+    min-height: 600px;
+  }
+
+  .banking-hero h1 {
+    max-width: 1000px;
+  }
+}
+
+/* =========================
+   LAPTOP
+========================= */
+
+@media (max-width: 1200px) {
+  .banking-hero-container {
+    padding: 70px 50px;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+  .banking-hero-container {
+    padding: 60px 40px;
+    min-height: auto;
+  }
+
+  .banking-hero h1 br {
+    display: none;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .banking-hero {
+    padding: 60px 16px;
+  }
+
+  .banking-hero-container {
+    padding: 40px 24px;
+    border-radius: 24px;
+  }
+
+  .hero-tag {
+    margin-bottom: 18px;
+  }
+
+  .banking-hero h1 {
+    margin-bottom: 18px;
+  }
+
+  .banking-hero p {
+    margin-bottom: 24px;
+  }
+
+  .hero-btn {
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .banking-hero-container {
+    padding: 32px 20px;
+    border-radius: 20px;
+  }
+
+  .banking-hero h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .banking-hero p {
+    font-size: 0.95rem;
+  }
+
+  .hero-btn {
+    max-width: 100%;
+    padding: 14px;
+  }
+}
+
+/* =========================
+   EXTRA SMALL DEVICES
+========================= */
+
+@media (max-width: 360px) {
+  .banking-hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-tag {
+    font-size: 0.9rem;
+  }
+}

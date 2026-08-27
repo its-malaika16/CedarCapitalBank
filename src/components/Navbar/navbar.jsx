@@ -51,12 +51,12 @@ const Navbar = () => {
                                 <div className="dropdown-column">
                                     <h4>Accounts</h4>
 
-                                    <Link to="/bank-account">Bank Account</Link>
-                                    <Link to="/joint-account">Joint Account</Link>
-                                    <Link to="/professional-account">
+                                    <Link to="/personal/bankaccount">Bank Account</Link>
+                                    <Link to="/personal/jointaccount">Joint Account</Link>
+                                    <Link to="/personal/professionalaccount">
                                         Professional Account
                                     </Link>
-                                    <Link to="/savings-account">
+                                    <Link to="/personal/savingaccount">
                                         Savings Account
                                     </Link>
                                     <Link to="/teen-account">

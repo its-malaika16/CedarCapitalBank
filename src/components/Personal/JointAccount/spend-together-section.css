@@ -1,0 +1,191 @@
+/* =========================
+   SECTION
+========================= */
+
+.joint-account-section {
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+.joint-account-container {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.joint-account-image {
+  flex: 1;
+}
+
+.joint-account-image img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  border-radius: 28px;
+  object-fit: cover;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.joint-account-content {
+  flex: 2;
+  max-width: 500px;
+}
+
+.joint-account-content h2 {
+  color: #173d6d;
+  font-size: clamp(2.3rem, 4vw, 4.5rem);
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.joint-account-content p {
+  color: #333;
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
+.joint-account-btn {
+  border: none;
+  background: #e02020;
+  color: #fff;
+
+  padding: 14px 30px;
+  border-radius: 999px;
+
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.joint-account-btn:hover {
+  background: #c9181e;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   LARGE DESKTOP
+========================= */
+
+@media (min-width: 1600px) {
+  .joint-account-container {
+    max-width: 1500px;
+  }
+
+  .joint-account-image img {
+    max-width: 600px;
+  }
+}
+
+/* =========================
+   LAPTOP
+========================= */
+
+@media (max-width: 1200px) {
+  .joint-account-container {
+    gap: 50px;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+  .joint-account-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .joint-account-content {
+    max-width: 700px;
+  }
+
+  .joint-account-content h2 br {
+    display: none;
+  }
+
+  .joint-account-image img {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .joint-account-section {
+    padding: 60px 16px;
+  }
+
+  .joint-account-container {
+    gap: 30px;
+  }
+
+  .joint-account-content h2 {
+    margin-bottom: 18px;
+  }
+
+  .joint-account-content p {
+    margin-bottom: 25px;
+  }
+
+  .joint-account-btn {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .joint-account-image img {
+    border-radius: 22px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .joint-account-content h2 {
+    font-size: 2rem;
+  }
+
+  .joint-account-content p {
+    font-size: 0.95rem;
+  }
+
+  .joint-account-btn {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .joint-account-image img {
+    border-radius: 18px;
+  }
+}
+
+/* =========================
+   EXTRA SMALL DEVICES
+========================= */
+
+@media (max-width: 360px) {
+  .joint-account-content h2 {
+    font-size: 1.7rem;
+  }
+}

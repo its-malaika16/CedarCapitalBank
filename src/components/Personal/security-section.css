@@ -1,0 +1,167 @@
+/* =========================
+   SECTION
+========================= */
+
+.security-section {
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+.account-security-container {
+    padding-top: 20px;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.security-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.security-content h2 {
+  color: #173d6d;
+  font-size: clamp(2.2rem, 5vw, 4.8rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.security-content p {
+  max-width: 850px;
+
+  color: #173d6d;
+  font-size: clamp(1rem, 1.4vw, 1.3rem);
+  line-height: 1.7;
+
+  margin-bottom: 30px;
+}
+
+.security-btn {
+  border: none;
+  background: #173d6d;
+  color: #fff;
+
+  padding: 14px 32px;
+  border-radius: 999px;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.security-btn:hover {
+  background: #0f2f59;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.security-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 32px;
+}
+
+.security-image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 32px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+  .security-section {
+    padding: 70px 20px;
+  }
+
+  .security-content p {
+    max-width: 700px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .security-section {
+    padding: 60px 16px;
+  }
+
+  .security-content {
+    margin-bottom: 35px;
+  }
+
+  .security-content h2 {
+    margin-bottom: 18px;
+  }
+
+  .security-content p {
+    margin-bottom: 24px;
+  }
+
+  .security-btn {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .security-image-wrapper {
+    border-radius: 24px;
+  }
+
+  .security-image-wrapper img {
+    border-radius: 24px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .security-content h2 {
+    font-size: 2rem;
+  }
+
+  .security-content p {
+    font-size: 0.95rem;
+  }
+
+  .security-btn {
+    max-width: 100%;
+  }
+
+  .security-image-wrapper,
+  .security-image-wrapper img {
+    border-radius: 18px;
+  }
+}
+
+/* =========================
+   LARGE SCREENS
+========================= */
+
+@media (min-width: 1600px) {
+  .account-security-container {
+    max-width: 1500px;
+  }
+}

@@ -1,0 +1,175 @@
+/* =========================
+   SECTION
+========================= */
+
+.account-switching {
+  background: #173d6d;
+  padding: 80px 20px;
+}
+
+.account-switching-container {
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.switching-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.switching-tag {
+  display: inline-block;
+  color: var(--secondary);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.switching-content h2 {
+  color: #ffffff;
+  font-size: 50px;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+.switching-content p {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 520px;
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.switching-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.switching-image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 28px;
+  display: block;
+  object-fit: cover;
+}
+
+/* =========================
+   LARGE SCREEN
+========================= */
+
+@media (min-width: 1600px) {
+  .account-switching-container {
+    max-width: 1500px;
+  }
+
+  .switching-image img {
+    max-width: 500px;
+  }
+}
+
+/* =========================
+   LAPTOP
+========================= */
+
+@media (max-width: 1200px) {
+  .account-switching-container {
+    gap: 50px;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+  .account-switching-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .switching-content {
+    max-width: 100%;
+  }
+
+  .switching-content p {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .switching-content h2 br {
+    display: none;
+  }
+
+  .switching-image img {
+    max-width: 500px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .account-switching {
+    padding: 60px 16px;
+  }
+
+  .account-switching-container {
+    gap: 30px;
+  }
+
+  .switching-content h2 {
+    margin-bottom: 20px;
+  }
+
+  .switching-image img {
+    max-width: 100%;
+    border-radius: 22px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .switching-content h2 {
+    font-size: 2rem;
+  }
+
+  .switching-content p {
+    font-size: 0.95rem;
+  }
+
+  .switching-tag {
+    font-size: 0.95rem;
+  }
+
+  .switching-image img {
+    border-radius: 18px;
+  }
+}
+
+/* =========================
+   EXTRA SMALL DEVICES
+========================= */
+
+@media (max-width: 360px) {
+  .switching-content h2 {
+    font-size: 1.7rem;
+  }
+}

@@ -30,7 +30,7 @@ const features = [
 const FeaturesSection = () => {
   return (
     <section className="features">
-      <div className="features-container">
+      <div className="digital-features-container">
         <div className="features-header">
           <h2>
             The Future of Digital Banking
@@ -46,7 +46,7 @@ const FeaturesSection = () => {
           </p>
         </div>
 
-        <div className="features-grid">
+        <div className="digital-features-grid">
           {features.map((feature, index) => (
             <div className="feature-card" key={index}>
               <img

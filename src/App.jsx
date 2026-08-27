@@ -4,6 +4,9 @@ import NavBar from './components/Navbar/navbar';
 import ScrollToTop from './components/ScrollToTop';
 
 import Home from './pages/home';
+import BankAccount from './pages/personal/bankaccount';
+import JointAccount from './pages/personal/joint-account';
+import ProfesionalAccount from './pages/personal/professional-account';
 // import Navbar from './components/Navbar/navbar.jsx';
 // import Home from './pages/home.jsx';
 // import Features from './pages/features.jsx';
@@ -25,6 +28,9 @@ function App() {
      { <NavBar /> }
      <Routes>
       <Route path="/" element={<Home />} />
+      <Route path = '/personal/bankaccount' element = {<BankAccount/>} />
+      <Route path = '/personal/jointaccount' element = {<JointAccount />} />
+      <Route path = '/personal/professionalaccount' element = {<ProfesionalAccount />} />
      </Routes>
       { /* <Routes>
         <Route path="/" element={<Home />} />

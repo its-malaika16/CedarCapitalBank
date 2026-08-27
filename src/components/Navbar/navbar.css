@@ -6,7 +6,7 @@
   height: 74px;
   background: #ffffff;
   border-bottom: 1px solid #f3f3f3;
-  position: relative;
+  position: sticky;
   z-index: 1000;
 }
 
@@ -126,7 +126,7 @@
 
 .dropdown-menu {
   position: absolute;
-  top: 52px;
+  top: 30px;
   left: 0;
 
   width: 460px;

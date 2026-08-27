@@ -3,8 +3,8 @@
   background: #ffffff;
 }
 
-.features-container {
-  /* max-width: 1280px; */
+.digital-features-container {
+  max-width: 1280px;
   margin: 0 auto;
   padding-left: 35px;
 }
@@ -47,7 +47,7 @@
 /* Cards Grid */
 /* ========================= */
 
-.features-grid {
+.digital-features-grid {
   display: grid;
   grid-template-columns: repeat(4, 27%);
   gap: 28px;
@@ -91,7 +91,7 @@
 /* ========================= */
 
 @media (max-width: 2000px) {
-  .features-grid {
+  .digital-features-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -101,7 +101,7 @@
 /* ========================= */
 
 @media (max-width: 1200px) {
-  .features-grid {
+  .digital-features-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -123,7 +123,7 @@
     margin: 0 auto 24px;
   }
 
-  .features-grid {
+  .digital-features-grid {
     grid-template-columns: 1fr;
   }
 
@@ -176,11 +176,11 @@
 /* ========================= */
 
 @media (min-width: 1600px) {
-  .features-container {
+  .digital-features-container {
     max-width: 1500px;
   }
 
-  .features-grid {
+  .digital-features-grid {
     gap: 35px;
   }
 

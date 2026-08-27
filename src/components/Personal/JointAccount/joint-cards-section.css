@@ -1,0 +1,142 @@
+/* =========================
+   SECTION
+========================= */
+
+.joint-cards {
+  padding: 80px 20px;
+  background: #fff;
+}
+
+.joint-cards-container {
+  margin: 0 auto;
+
+  min-height: 450px;
+
+  background-image: url("/assets/images/joint-cards-bg.png");
+  background-repeat: no-repeat;
+  background-position:bottom;
+  /* background-size: contain; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+  max-width: 800px;
+  padding: 40px 20px;
+}
+
+.content h2 {
+  color: #173d6d;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.content p {
+  color: #173d6d;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.note {
+  display: block;
+  color: #173d6d;
+  font-size: 0.875rem;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.buttons button {
+  border: none;
+  background: #df2326;
+  color: white;
+
+  padding: 14px 30px;
+  border-radius: 999px;
+
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 1400px) {
+  .joint-cards-container {
+    min-height: 650px;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+  .joint-cards-container {
+    min-height: 450px;
+    background-size: 100% auto;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .joint-cards {
+    padding: 60px 16px;
+  }
+
+  .joint-cards-container {
+    min-height: 350px;
+    background-position: bottom center;
+    background-size: 100% auto;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttons button {
+    width: 220px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .joint-cards-container {
+    min-height: 300px;
+  }
+
+  .content h2 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 0.95rem;
+  }
+
+  .buttons button {
+    width: 100%;
+    max-width: 250px;
+  }
+}

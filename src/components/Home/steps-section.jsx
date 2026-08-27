@@ -2,21 +2,21 @@ import "./steps-section.css";
 
 const steps = [
   {
-    icon: "/assets/images/user.svg",
+    icon: "/assets/images/reduser.svg",
     step: "STEP 01",
     title: "Open your account",
     description:
       "Then move your salary by sharing your account number or IBAN with your employer.",
   },
   {
-    icon: "/assets/images/wallet.svg",
+    icon: "/assets/images/redwallet.svg",
     step: "STEP 02",
     title: "Switch your payments",
     description:
       "Move any recurring payments (i.e. subscriptions and utility bills) from your other accounts to Cedar Capital Account.",
   },
   {
-    icon: "/assets/images/calendar.svg",
+    icon: "/assets/images/redcalendar.svg",
     step: "STEP 03",
     title: "Automate payday",
     description:
