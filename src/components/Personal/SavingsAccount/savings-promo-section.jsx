@@ -14,7 +14,7 @@ const SavingsPromoCard = () => {
                         />
                         </div>
                         <h3>
-                            Promotional rate available
+                            Simple savings with easy access
                         </h3>
 
                         <div className="promo-line"></div>
@@ -27,23 +27,11 @@ const SavingsPromoCard = () => {
                 {/* Right Side */}
                 <div className="promo-right">
                     <p>
-                        Our 5% AER (variable) promotional rate is available
-                        for new Cedar Capital customers who open an Instant
-                        Access Savings account within the offer window.
-                        Eligible customers will benefit from the boosted
-                        rate for a fixed period, up to a defined balance
-                        limit. After the promotional period ends, your
-                        rate will automatically adjust to the standard
-                        rate associated with your plan.
+                      Open a Cedar Capital Instant Access Savings Account and keep your money in one convenient place. The account is designed to make saving straightforward while giving you flexibility to access your funds when you need them.
                     </p>
 
                     <p>
-                        AER (Annual Equivalent Rate) reflects the interest
-                        you earn over one year, including compounding.
-                        Rates vary by plan tier and currency.
-                        Subscription fees and plan terms apply.
-                        Interest rates may change, and any interest earned
-                        may be subject to applicable taxes.
+                        Manage your savings securely through your Cedar Capital account, add funds when it suits you, and keep track of your balance with ease. Account availability, balance limits, withdrawal conditions, subscription fees and plan terms may vary depending on your selected plan and currency.
                     </p>
 
                     <div className="promo-note">

@@ -37,7 +37,7 @@
 
 .hero-content h1 {
   color: #fff;
-  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-size: 50px;
   line-height: 1.05;
   font-weight: 700;
   margin-bottom: 24px;
@@ -45,7 +45,7 @@
 
 .hero-content p {
   color: rgba(255, 255, 255, 0.9);
-  font-size: clamp(1rem, 1.2vw, 1.25rem);
+  font-size: 18px;
   line-height: 1.7;
   margin-bottom: 30px;
 }

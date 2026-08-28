@@ -26,9 +26,9 @@ const steps = [
 
 const SavingsSteps = () => {
   return (
-    <section className="started-section">
+    <section className="savings-started-section">
       <div className="professional-started-container">
-        <div className="started-header">
+        <div className="savings-started-header">
           <h2>How to get started?</h2>
 
           <div className="title-line">
@@ -41,15 +41,15 @@ const SavingsSteps = () => {
           {steps.map((step, index) => (
             <div className="step-wrapper" key={index}>
               <div className="professional-step-card">
-                <div className="step-number">
+                <div className="savings-step-number">
                   {step.number}
                 </div>
 
-                <div className="step-icon">
+                <div className="savings-step-icon">
                   <img src = {step.icon} />
                 </div>
 
-                <div className="card-line"></div>
+                <div className="savings-card-line"></div>
 
                 <h3>{step.title}</h3>
                 <p> {step.description}</p>

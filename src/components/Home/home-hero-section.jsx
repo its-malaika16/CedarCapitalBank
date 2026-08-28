@@ -7,8 +7,8 @@ const HeroSection = () => {
                 {/* Left Content */}
                 <div className="hero-content">
                     <h1>
-                        Banking <br />
-                        Infrastructure Built <br />
+                        Banking 
+                        Infrastructure Built 
                         for Global Business
                     </h1>
 

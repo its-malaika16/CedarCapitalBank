@@ -9,15 +9,12 @@ const SavingsHeroSection = () => {
         </span>
 
         <h1>
-          Earn 5% AER on your 
-          <br />
-          savings
+          Save with simplicity and flexibility
         </h1>
 
         <p>
-          Your money deserves momentum. Open a Cedar Capital Instant Access Savings account during our promotional period and enjoy a boosted 5% AER (variable) — designed to help your balance grow from day one.
-        </p>
-
+          Keep your money secure and accessible with a Cedar Capital Instant Access Savings Account. Designed for everyday saving, it gives you a simple way to set money aside while keeping access to your funds whenever you need them.
+</p>
         <button className="hero-btn">
           Open a savings account
         </button>

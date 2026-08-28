@@ -41,20 +41,20 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section className="features-section">
-      <div className="features-container">
+    <section className="account-features-section">
+      <div className="account-features-container">
         <h2>Everything you need, in <span> one </span>place</h2>
 
-        <div className="features-grid">
+        <div className="account-features-grid">
           {features.map((feature, index) => (
-            <div className="feature-card" key={index}>
-              <div className="icon-wrapper">
+            <div className="account-feature-card" key={index}>
+              <div className="account-icon-wrapper">
                 <img src = {feature.icon} />
               </div>
 
               <h3>{feature.title}</h3>
 
-              <div className="feature-line"></div>
+              <div className="account-feature-line"></div>
 
               <p>{feature.description}</p>
             </div>

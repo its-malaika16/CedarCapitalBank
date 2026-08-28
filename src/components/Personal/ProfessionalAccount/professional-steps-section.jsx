@@ -38,15 +38,15 @@ const GetStartedSteps = () => {
           {steps.map((step, index) => (
             <div className="step-wrapper" key={index}>
               <div className="professional-step-card">
-                <div className="step-number">
+                <div className="professional-step-number">
                   {step.number}
                 </div>
 
-                <div className="step-icon">
+                <div className="professional-step-icon">
                   <img src = {step.icon} />
                 </div>
 
-                <div className="card-line"></div>
+                <div className="professional-card-line"></div>
 
                 <h3>{step.title}</h3>
               </div>

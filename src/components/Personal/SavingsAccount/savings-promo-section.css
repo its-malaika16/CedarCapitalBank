@@ -87,6 +87,7 @@
 }
 
 .promo-right p {
+  margin-top:20px;
   color: #1f3d6d;
   line-height: 1.7;
   font-size: clamp(0.95rem, 1.1vw, 1.05rem);

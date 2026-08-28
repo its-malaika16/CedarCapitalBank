@@ -1,14 +1,14 @@
-.features-section {
+.account-features-section {
   padding: 80px 20px;
   background: #fafafa;
 }
 
-.features-container {
+.account-features-container {
   max-width: 1300px;
   margin: 0 auto;
 }
 
-.features-container h2 {
+.account-features-container h2 {
   text-align: center;
   color: #173d6d;
   font-size: 60px;
@@ -16,7 +16,7 @@
   margin-bottom: 60px;
 }
 
-.features-container span{
+.account-features-container span{
 color: var(--secondary);
 }
 
@@ -24,24 +24,24 @@ color: var(--secondary);
    GRID
 ======================= */
 
-.features-grid {
+.account-features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
-.feature-card {
+.account-feature-card {
   background: #f4f4f3;
   border-radius: 28px;
   padding: 28px;
   transition: all 0.3s ease;
 }
 
-.feature-card:hover {
+.account-feature-card:hover {
   transform: translateY(-6px);
 }
 
-.icon-wrapper {
+.account-icon-wrapper {
   width: 64px;
   height: 64px;
   border-radius: 50%;
@@ -54,13 +54,13 @@ color: var(--secondary);
   margin-bottom: 24px;
 }
 
-.icon-wrapper img {
+.account-icon-wrapper img {
   width: 34px;
   height: 34px;
   object-fit: contain;
 }
 
-.feature-card h3 {
+.account-feature-card h3 {
   color: #173d6d;
   font-size: clamp(1.25rem, 1.8vw, 1.8rem);
   font-weight: 700;
@@ -68,7 +68,7 @@ color: var(--secondary);
   margin-bottom: 12px;
 }
 
-.feature-line {
+.account-feature-line {
   width: 60px;
   height: 3px;
   background: #e02020;
@@ -76,7 +76,7 @@ color: var(--secondary);
   margin-bottom: 18px;
 }
 
-.feature-card p {
+.account-feature-card p {
   color: #555;
   font-size: 1rem;
   line-height: 1.6;
@@ -87,11 +87,11 @@ color: var(--secondary);
 ======================= */
 
 @media (max-width: 1200px) {
-  .features-grid {
+  .account-features-grid {
     gap: 20px;
   }
 
-  .feature-card {
+  .account-feature-card {
     padding: 24px;
   }
 }
@@ -101,7 +101,7 @@ color: var(--secondary);
 ======================= */
 
 @media (max-width: 992px) {
-  .features-grid {
+  .account-features-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -111,30 +111,30 @@ color: var(--secondary);
 ======================= */
 
 @media (max-width: 768px) {
-  .features-section {
+  .account-features-section {
     padding: 60px 16px;
   }
 
-  .features-container h2 {
+  .account-features-container h2 {
     margin-bottom: 40px;
   }
 
-  .features-grid {
+  .account-features-grid {
     grid-template-columns: 1fr;
     gap: 18px;
   }
 
-  .feature-card {
+  .account-feature-card {
     padding: 22px;
     border-radius: 20px;
   }
 
-  .icon-wrapper {
+  .account-icon-wrapper {
     width: 56px;
     height: 56px;
   }
 
-  .icon-wrapper img {
+  .account-icon-wrapper img {
     width: 30px;
     height: 30px;
   }
@@ -145,15 +145,15 @@ color: var(--secondary);
 ======================= */
 
 @media (max-width: 480px) {
-  .features-container h2 {
+  .account-features-container h2 {
     font-size: 2rem;
   }
 
-  .feature-card h3 {
+  .account-feature-card h3 {
     font-size: 1.2rem;
   }
 
-  .feature-card p {
+  .account-feature-card p {
     font-size: 0.95rem;
   }
 }
@@ -163,15 +163,15 @@ color: var(--secondary);
 ======================= */
 
 @media (min-width: 1600px) {
-  .features-container {
+  .account-features-container {
     max-width: 1500px;
   }
 
-  .features-grid {
+  .account-features-grid {
     gap: 30px;
   }
 
-  .feature-card {
+  .account-feature-card {
     padding: 35px;
   }
 }
