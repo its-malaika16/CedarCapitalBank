@@ -1,0 +1,279 @@
+/* =========================
+   SECTION
+========================= */
+
+.started-section {
+  padding: 100px 20px;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.started-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.started-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.started-header h2 {
+  color: #133d72;
+  font-size: clamp(2.3rem, 5vw, 5rem);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.title-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.blue-line {
+  width: 60px;
+  height: 4px;
+  background: #4d9cff;
+  border-radius: 30px;
+}
+
+.red-line {
+  width: 25px;
+  height: 4px;
+  background: #e12626;
+  border-radius: 30px;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  align-items: center;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.step-wrapper {
+  position: relative;
+}
+
+.step-card {
+  background: #fff;
+  border: 1px solid #dbe7f7;
+  border-radius: 30px;
+
+  padding: 35px;
+
+  min-height: 500px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+
+  position: relative;
+}
+
+.step-number {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+
+  width: 55px;
+  height: 55px;
+
+  border-radius: 50%;
+  background: #eef5ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2rem;
+  font-weight: 700;
+  color: #133d72;
+}
+
+.step-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.step-icon img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+}
+
+.card-line {
+  width: 50px;
+  height: 3px;
+  background: #b7d4ff;
+  margin: 25px auto;
+  border-radius: 50px;
+}
+
+.step-card h3 {
+  color: #133d72;
+  font-size: clamp(1.4rem, 2vw, 2.2rem);
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+/* =========================
+   ARROW
+========================= */
+
+.step-arrow {
+  position: absolute;
+  right: -32px;
+  top: 45%;
+
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+  background: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2rem;
+  color: #2e7cf6;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+  z-index: 10;
+}
+
+/* =========================
+   NOTE
+========================= */
+
+.bottom-note {
+  margin-top: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.info-icon {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+  background: #eef5ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #133d72;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.bottom-note p {
+  color: #133d72;
+  font-size: 1.1rem;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .step-arrow {
+    display: none;
+  }
+
+  .step-card {
+    min-height: auto;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .started-section {
+    padding: 70px 16px;
+  }
+
+  .started-header {
+    margin-bottom: 40px;
+  }
+
+  .step-card {
+    padding: 28px 22px;
+    border-radius: 24px;
+  }
+
+  .step-icon img {
+    width: 85px;
+    height: 85px;
+  }
+
+  .bottom-note {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .started-header h2 {
+    font-size: 2rem;
+  }
+
+  .step-number {
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+  }
+
+  .step-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .bottom-note p {
+    font-size: 0.95rem;
+  }
+}
+
+/* =========================
+   4K SCREENS
+========================= */
+
+@media (min-width: 1600px) {
+  .started-container {
+    max-width: 1600px;
+  }
+
+  .step-card {
+    min-height: 560px;
+  }
+}

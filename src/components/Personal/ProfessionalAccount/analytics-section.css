@@ -1,0 +1,162 @@
+/* =========================
+   SECTION
+========================= */
+
+.business-analytics {
+  background: #133d72;
+  padding: 80px 20px;
+  overflow: hidden;
+}
+
+.business-analytics-container {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.analytics-content {
+  flex: 1;
+  max-width: 520px;
+}
+
+.analytics-content h2 {
+  color: #ffffff;
+  font-size: clamp(2.2rem, 5vw, 5rem);
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.analytics-content p {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: clamp(1rem, 1.5vw, 1.4rem);
+  line-height: 1.6;
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.analytics-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.analytics-image img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* =========================
+   LARGE DESKTOP
+========================= */
+
+@media (min-width: 1600px) {
+  .business-analytics-container {
+    max-width: 1600px;
+  }
+
+  .analytics-image img {
+    max-width: 850px;
+  }
+}
+
+/* =========================
+   LAPTOP
+========================= */
+
+@media (max-width: 1200px) {
+  .business-analytics-container {
+    gap: 40px;
+  }
+
+  .analytics-image img {
+    max-width: 600px;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+  .business-analytics-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .analytics-content {
+    max-width: 750px;
+  }
+
+  .analytics-content h2 br {
+    display: none;
+  }
+
+  .analytics-image img {
+    max-width: 700px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .business-analytics {
+    padding: 60px 16px;
+  }
+
+  .business-analytics-container {
+    gap: 30px;
+  }
+
+  .analytics-content h2 {
+    margin-bottom: 18px;
+  }
+
+  .analytics-image img {
+    max-width: 100%;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .analytics-content h2 {
+    font-size: 2rem;
+  }
+
+  .analytics-content p {
+    font-size: 0.95rem;
+  }
+}
+
+/* =========================
+   EXTRA SMALL DEVICES
+========================= */
+
+@media (max-width: 360px) {
+  .analytics-content h2 {
+    font-size: 1.7rem;
+  }
+
+  .analytics-content p {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,169 @@
+/* =========================
+   SECTION
+========================= */
+
+.cashback-section {
+  padding: 80px 20px;
+ background: #ffffff;
+}
+
+.cashback-container {
+    max-width: 1400px;
+  margin: 0 auto;
+
+ min-height: 700px;
+
+  background-image: url("/assets/images/cashback-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  position: relative;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.cashback-content {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.cashback-content h2 {
+  color: #173d6d;
+  font-size: clamp(2rem, 5vw, 5.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.cashback-description {
+  max-width: 850px;
+  margin: 0 auto 25px;
+
+  color: #173d6d;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  line-height: 1.5;
+}
+
+.cashback-note {
+  color: #173d6d;
+  font-size: clamp(0.9rem, 1vw, 1.1rem);
+  line-height: 1.6;
+}
+
+/* =========================
+   LARGE DESKTOP
+========================= */
+
+@media (min-width: 1600px) {
+  .cashback-container {
+    max-width: 1600px;
+    min-height: 850px;
+  }
+}
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (max-width: 1400px) {
+  .cashback-container {
+    min-height: 650px;
+  }
+}
+
+/* =========================
+   LAPTOP
+========================= */
+
+@media (max-width: 1200px) {
+  .cashback-container {
+    min-height: 580px;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+  .cashback-container {
+    min-height: 480px;
+    background-size: 100% auto;
+  }
+
+  .cashback-content h2 br {
+    display: none;
+  }
+
+  .cashback-description {
+    max-width: 700px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .cashback-section {
+    padding: 60px 16px;
+  }
+
+  .cashback-container {
+    min-height: auto;
+
+    background-position: bottom center;
+    background-size: 100% auto;
+
+    padding-bottom: 180px;
+  }
+
+  .cashback-content {
+    padding-top: 0;
+  }
+
+  .cashback-description {
+    margin-bottom: 20px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .cashback-container {
+    padding-bottom: 120px;
+  }
+
+  .cashback-content h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .cashback-description {
+    font-size: 0.95rem;
+  }
+
+  .cashback-note {
+    font-size: 0.85rem;
+  }
+}
+
+/* =========================
+   EXTRA SMALL DEVICES
+========================= */
+
+@media (max-width: 360px) {
+  .cashback-content h2 {
+    font-size: 1.7rem;
+  }
+}
