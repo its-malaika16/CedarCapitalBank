@@ -1,0 +1,203 @@
+/* =========================
+   SECTION
+========================= */
+
+.promo-card-section {
+  padding: 80px 20px;
+  background: #f8f9fb;
+}
+
+.promo-card {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 30px;
+
+  display: flex;
+  gap: 35px;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================
+   LEFT
+========================= */
+
+.promo-left {
+  width: 280px;
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.promo-icon {
+  width: 110px;
+  height: 110px;
+
+  border-radius: 50%;
+  background: #eef4ff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.promo-icon img {
+  width: 55px;
+  height: 55px;
+}
+
+.promo-left h3 {
+  color: #133d72;
+  font-size: clamp(1.3rem, 2vw, 2rem);
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.promo-line {
+  width: 45px;
+  height: 3px;
+  border-radius: 20px;
+  background: #eb2a2a;
+  margin-top: 16px;
+}
+
+/* =========================
+   DIVIDER
+========================= */
+
+.promo-divider {
+  width: 1px;
+  background: #8c8d8f;
+}
+
+/* =========================
+   RIGHT
+========================= */
+
+.promo-right {
+  flex: 1;
+}
+
+.promo-right p {
+  color: #1f3d6d;
+  line-height: 1.7;
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  margin-bottom: 20px;
+}
+
+.promo-note {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background: #f5f8fd;
+  border-radius: 12px;
+
+  padding: 16px 20px;
+  margin-top: 25px;
+}
+
+.promo-note svg {
+  color: #133d72;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.promo-note span {
+  color: #133d72;
+  font-size: 0.95rem;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+  .promo-card {
+    flex-direction: column;
+  }
+
+  .promo-left {
+    width: 100%;
+  }
+
+  .promo-divider {
+    width: 100%;
+    height: 1px;
+  }
+
+  .promo-right {
+    text-align: center;
+  }
+
+  .promo-note {
+    justify-content: center;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .promo-card-section {
+    padding: 60px 16px;
+  }
+
+  .promo-card {
+    padding: 24px;
+    border-radius: 20px;
+  }
+
+  .promo-icon {
+    width: 90px;
+    height: 90px;
+  }
+
+  .promo-icon img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .promo-card {
+    padding: 20px;
+  }
+
+  .promo-left h3 {
+    font-size: 1.25rem;
+  }
+
+  .promo-right p {
+    font-size: 0.9rem;
+  }
+
+  .promo-note {
+    padding: 14px;
+    text-align: left;
+  }
+}
+
+/* =========================
+   LARGE SCREENS
+========================= */
+
+@media (min-width: 1600px) {
+  .promo-card {
+    max-width: 1450px;
+    padding: 40px;
+  }
+}

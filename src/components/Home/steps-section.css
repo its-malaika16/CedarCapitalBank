@@ -80,7 +80,7 @@ max-width: 800px;
   object-fit: contain;
 }
 
-.step-number {
+.get-step-number {
   display: block;
   color: #9aa8a5;
   font-size: 0.9rem;

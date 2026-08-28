@@ -43,7 +43,7 @@ const GetStartedSection = () => {
                 <img src= {step.icon} />
               </div>
 
-              <span className="step-number">
+              <span className="get-step-number">
                 {step.step}
               </span>
 

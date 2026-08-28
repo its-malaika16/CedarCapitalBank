@@ -56,7 +56,7 @@ const Navbar = () => {
                                     <Link to="/personal/professionalaccount">
                                         Professional Account
                                     </Link>
-                                    <Link to="/personal/savingaccount">
+                                    <Link to="/personal/savingsaccount">
                                         Savings Account
                                     </Link>
                                     <Link to="/teen-account">

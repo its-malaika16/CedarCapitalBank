@@ -1,0 +1,232 @@
+/* =========================
+   SECTION
+========================= */
+
+.business-account-hero {
+  background: #12386d;
+  padding: 80px 20px;
+}
+
+*hero-container {
+  max-height: 1400px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.hero-content {
+  flex: 1;
+  max-width: 650px;
+}
+
+.hero-tag {
+  display: inline-block;
+  color: #ff3b3b;
+  font-size: 0.85rem;
+  letter-spacing: 4px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  color: #fff;
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  line-height: 1.05;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.hero-content p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: clamp(1rem, 1.2vw, 1.25rem);
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.hero-features {
+  list-style: none;
+  margin-bottom: 35px;
+}
+
+.hero-features li {
+  color: white;
+  margin-bottom: 16px;
+  position: relative;
+  padding-left: 28px;
+  line-height: 1.6;
+}
+
+.hero-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #ff3737;
+  font-weight: bold;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.primary-btn {
+  background: var(--secondary);
+  color: white;
+  border: none;
+  padding: 15px 28px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.secondary-btn {
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.3);
+
+  padding: 15px 28px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 30px;
+  display: block;
+  object-fit: contain;
+}
+
+/* =========================
+   DESKTOP LARGE
+========================= */
+
+@media (min-width: 1600px) {
+  .hero-container {
+    max-width: 1550px;
+  }
+
+  .hero-image img {
+    max-width: 650px;
+  }
+}
+
+/* =========================
+   LAPTOP
+========================= */
+
+@media (max-width: 1200px) {
+  .hero-container {
+    gap: 40px;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 800px;
+  }
+
+  .hero-content h1 br {
+    display: none;
+  }
+
+  .hero-features {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto 35px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .business-account-hero {
+    padding: 60px 16px;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    border-radius: 22px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p,
+  .hero-features li {
+    font-size: 0.95rem;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    padding: 14px;
+  }
+}
+
+/* =========================
+   EXTRA SMALL
+========================= */
+
+@media (max-width: 360px) {
+  .hero-content h1 {
+    font-size: 1.75rem;
+  }
+}

@@ -1,0 +1,215 @@
+/* =========================
+   SECTION
+========================= */
+
+.business-features {
+    padding: 90px 20px;
+    background: #f7f9fc;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative Background */
+
+.business-features::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 35%;
+    height: 100%;
+
+    background: linear-gradient(135deg,
+            rgba(19, 58, 112, 0.04),
+            transparent);
+
+    pointer-events: none;
+}
+
+.business-features::after {
+    content: "";
+    position: absolute;
+    right: -150px;
+    top: -150px;
+
+    width: 500px;
+    height: 500px;
+
+    border-radius: 50%;
+    border: 1px solid rgba(19, 58, 112, 0.08);
+
+    pointer-events: none;
+}
+
+.business-features-container {
+    max-width: 1450px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.business-features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.business-feature-card {
+    background: #ffffff;
+    border: 1px solid #e6ebf3;
+    border-radius: 24px;
+
+    padding: 35px 30px;
+
+    min-height: 380px;
+
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.04);
+
+    transition: all 0.3s ease;
+}
+
+.business-feature-card:hover {
+    transform: translateY(-6px);
+}
+
+.business-icon-circle {
+    width: 88px;
+    height: 88px;
+
+    border-radius: 50%;
+    background: #fff5f5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 28px;
+}
+
+.business-icon-circle img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.business-feature-card h3 {
+    color: #133a70;
+    font-size: clamp(1.4rem, 2vw, 2rem);
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.business-card-line {
+    width: 50px;
+    height: 3px;
+    background: #e02828;
+    border-radius: 20px;
+    margin-bottom: 24px;
+}
+
+.business-feature-card p {
+    color: #4c5870;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* =========================
+   LAPTOP
+========================= */
+
+@media (max-width: 1200px) {
+    .business-features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .business-feature-card {
+        min-height: 320px;
+    }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+    .business-features {
+        padding: 70px 20px;
+    }
+
+    .business-feature-card {
+        padding: 30px 24px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+    .business-features {
+        padding: 60px 16px;
+    }
+
+    .business-features-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .business-feature-card {
+        min-height: auto;
+        padding: 28px 22px;
+        border-radius: 20px;
+    }
+
+    .business-icon-circle {
+        width: 72px;
+        height: 72px;
+    }
+
+    .business-icon-circle img {
+        width: 34px;
+        height: 34px;
+    }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+    .business-feature-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .business-feature-card p {
+        font-size: 0.95rem;
+    }
+}
+
+/* =========================
+   4K SCREENS
+========================= */
+
+@media (min-width: 1600px) {
+    .business-features-container {
+        max-width: 1600px;
+    }
+
+    .business-features-grid {
+        gap: 32px;
+    }
+
+    .business-feature-card {
+        padding: 40px;
+    }
+}

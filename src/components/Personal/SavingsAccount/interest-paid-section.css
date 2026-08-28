@@ -1,0 +1,213 @@
+/* =========================
+   SECTION
+========================= */
+
+.interest-section {
+  /* padding: 80px 20px; */
+  background: #fff;
+}
+
+.interest-container {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  min-height: 700px;
+
+  background-image: url("/assets/images/interest-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  text-align: center;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.interest-content {
+  width: 100%;
+  padding-top: 70px;
+}
+
+.interest-content h2 {
+  color: #173d6d;
+  font-size: clamp(2.2rem, 5vw, 5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+.interest-description {
+  max-width: 900px;
+  margin: 0 auto 25px;
+
+  color: #173d6d;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  line-height: 1.6;
+}
+
+.interest-note {
+  color: #173d6d;
+  font-size: clamp(0.9rem, 1.1vw, 1.1rem);
+  margin-bottom: 80px;
+}
+
+/* =========================
+   RATE
+========================= */
+
+.interest-rate {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.up-to {
+  color: #173d6d;
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 700;
+}
+
+.percentage {
+  color: #173d6d;
+  font-size: clamp(5rem, 12vw, 10rem);
+  line-height: 0.9;
+  font-weight: 800;
+}
+
+.aer {
+  color: #173d6d;
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 700;
+}
+
+.aer span {
+  font-size: 0.7em;
+}
+
+/* =========================
+   LARGE SCREENS
+========================= */
+
+@media (min-width: 1600px) {
+  .interest-container {
+    max-width: 1600px;
+    min-height: 850px;
+  }
+}
+
+/* =========================
+   LAPTOP
+========================= */
+
+@media (max-width: 1200px) {
+  .interest-container {
+    min-height: 600px;
+  }
+
+  .interest-note {
+    margin-bottom: 60px;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+  .interest-container {
+    min-height: 520px;
+    background-size: 100% auto;
+  }
+
+  .interest-content {
+    padding-top: 50px;
+  }
+
+  .interest-note {
+    margin-bottom: 45px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .interest-section {
+    padding: 60px 16px;
+  }
+
+  .interest-container {
+    min-height: auto;
+
+    background-position: bottom center;
+    background-size: 100% auto;
+
+    padding-bottom: 140px;
+  }
+
+  .interest-content {
+    padding-top: 20px;
+  }
+
+  .interest-note {
+    margin-bottom: 30px;
+  }
+
+  .interest-rate {
+    gap: 10px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .interest-container {
+    padding-bottom: 100px;
+  }
+
+  .interest-content h2 {
+    font-size: 2rem;
+  }
+
+  .interest-description {
+    font-size: 0.95rem;
+  }
+
+  .interest-note {
+    font-size: 0.85rem;
+  }
+
+  .interest-rate {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .percentage {
+    line-height: 1;
+  }
+}
+
+/* =========================
+   EXTRA SMALL DEVICES
+========================= */
+
+@media (max-width: 360px) {
+  .interest-content h2 {
+    font-size: 1.7rem;
+  }
+
+  .percentage {
+    font-size: 4rem;
+  }
+}

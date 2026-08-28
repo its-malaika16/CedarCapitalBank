@@ -1,27 +1,30 @@
-import "./professional-steps-section.css";
+import "./savings-steps-section.css";
 
 const steps = [
   {
     number: "1",
-    icon: "/assets/images/prof-acc.svg",
+    icon: "/assets/images/saving-acc.svg",
     title:
-      "Add a Professional Account and choose the category that best describes your freelance work",
+      "Open the Cedar Capital app",
+    description: "From your home screen, tap the account selector beneath your balance and choose Add new.",  
   },
   {
     number: "2",
-    icon: "/assets/images/prof-doc.svg",
+    icon: "/assets/images/saving-doc.svg",
     title:
-      "Enter a short description of your business activity",
+      "Create your savings account",
+      description: "Select Savings, then choose Instant Access Savings.",  
   },
   {
     number: "3",
-    icon: "/assets/images/prof-proof.svg",
+    icon: "/assets/images/saving-money.svg",
     title:
-      "Provide proof of your work such as a registration document, website, or social media page",
+      "Add money",
+      description: "With no minimum deposit required, you can start saving with any amount.",  
   },
 ];
 
-const GetStartedSteps = () => {
+const SavingsSteps = () => {
   return (
     <section className="started-section">
       <div className="professional-started-container">
@@ -49,6 +52,7 @@ const GetStartedSteps = () => {
                 <div className="card-line"></div>
 
                 <h3>{step.title}</h3>
+                <p> {step.description}</p>
               </div>
 
               {index < 2 && (
@@ -73,4 +77,4 @@ const GetStartedSteps = () => {
   );
 };
 
-export default GetStartedSteps;
+export default SavingsSteps;

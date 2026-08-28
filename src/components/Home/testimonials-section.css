@@ -12,23 +12,23 @@
 
 /* ===== Header ===== */
 
-.section-header {
+.testimonials-section-header {
   text-align: center;
   margin-bottom: 50px;
 }
 
-.section-header h2 {
+.testimonials-section-header h2 {
   font-size: clamp(2rem, 4vw, 3.5rem);
   color: #ffffff;
   font-weight: 700;
   margin-bottom: 12px;
 }
 
-.section-header span {
+.testimonials-section-header span {
   color: #e12528;
 }
 
-.section-header p {
+.testimonials-section-header p {
   color: rgba(255, 255, 255, 0.75);
   font-size: 1rem;
 }
@@ -151,7 +151,7 @@
 /* ===== Small Mobile ===== */
 
 @media (max-width: 480px) {
-  .section-header {
+  .testimonials-section-header {
     margin-bottom: 35px;
   }
 
@@ -179,7 +179,7 @@
     padding: 50px;
   }
 
-  .section-header h2 {
+  .testimonials-section-header h2 {
     font-size: 4rem;
   }
 }

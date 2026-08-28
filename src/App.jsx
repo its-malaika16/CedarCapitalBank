@@ -7,6 +7,9 @@ import Home from './pages/home';
 import BankAccount from './pages/personal/bankaccount';
 import JointAccount from './pages/personal/joint-account';
 import ProfesionalAccount from './pages/personal/professional-account';
+import SavingsAccount from './pages/personal/savings-account';
+import Business from './pages/business';
+import Footer from './components/Footer/footer';
 // import Navbar from './components/Navbar/navbar.jsx';
 // import Home from './pages/home.jsx';
 // import Features from './pages/features.jsx';
@@ -31,6 +34,8 @@ function App() {
       <Route path = '/personal/bankaccount' element = {<BankAccount/>} />
       <Route path = '/personal/jointaccount' element = {<JointAccount />} />
       <Route path = '/personal/professionalaccount' element = {<ProfesionalAccount />} />
+      <Route path = '/personal/savingsaccount' element = {<SavingsAccount />} />
+      <Route path = '/business' element = {<Business />} />
      </Routes>
       { /* <Routes>
         <Route path="/" element={<Home />} />
@@ -44,6 +49,8 @@ function App() {
         <Route path="/cookie" element={<Cookie/>} />
       </Routes>
        { <Footer /> } */}
+
+       {<Footer />}
     </Router>
   );
 }

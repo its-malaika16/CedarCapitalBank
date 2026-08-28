@@ -77,7 +77,7 @@
 
   padding: 35px;
 
-  min-height: 500px;
+  min-height: 450px;
 
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
 
@@ -125,10 +125,16 @@
 }
 
 .professional-step-card h3 {
+    margin-top: 20px;
   color: #133d72;
   font-size: clamp(1.4rem, 2vw, 2.2rem);
   line-height: 1.35;
   font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.professional-step-card p{
+    font-size: 20px;
 }
 
 /* =========================
@@ -274,6 +280,6 @@
   }
 
   .professional-step-card {
-    min-height: 560px;
+    min-height: 450px;
   }
 }

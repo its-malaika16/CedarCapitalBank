@@ -1,0 +1,167 @@
+/* =========================
+   SECTION
+========================= */
+
+.savings-growth {
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+.savings-growth-container {
+  max-width: 1300px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.growth-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.growth-content h2 {
+  color: #173d6d;
+  font-size: clamp(2rem, 4vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 40px;
+}
+
+.growth-highlight {
+  color: #173d6d;
+  font-size: clamp(1rem, 1.4vw, 1.35rem);
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.growth-note {
+  color: #5f6f87;
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  line-height: 1.7;
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.growth-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.growth-image img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 24px;
+}
+
+/* =========================
+   LARGE DESKTOP
+========================= */
+
+@media (min-width: 1600px) {
+  .savings-growth-container {
+    max-width: 1500px;
+  }
+
+  .growth-image img {
+    max-width: 520px;
+  }
+}
+
+/* =========================
+   LAPTOP
+========================= */
+
+@media (max-width: 1200px) {
+  .savings-growth-container {
+    gap: 50px;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+  .savings-growth-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+
+  .growth-content {
+    max-width: 800px;
+  }
+
+  .growth-image img {
+    max-width: 500px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .savings-growth {
+    padding: 60px 16px;
+  }
+
+  .savings-growth-container {
+    gap: 35px;
+  }
+
+  .growth-content h2 {
+    margin-bottom: 24px;
+  }
+
+  .growth-highlight {
+    margin-bottom: 20px;
+  }
+
+  .growth-image img {
+    max-width: 100%;
+    border-radius: 20px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .growth-content h2 {
+    font-size: 2rem;
+  }
+
+  .growth-highlight {
+    font-size: 0.95rem;
+  }
+
+  .growth-note {
+    font-size: 0.85rem;
+  }
+}
+
+/* =========================
+   EXTRA SMALL DEVICES
+========================= */
+
+@media (max-width: 360px) {
+  .growth-content h2 {
+    font-size: 1.7rem;
+  }
+}
