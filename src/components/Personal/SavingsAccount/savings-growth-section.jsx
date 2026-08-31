@@ -13,8 +13,6 @@ const SavingsGrowthSection = () => {
 
           <p className="growth-highlight">
 Whether you're saving for a specific goal, building a financial cushion, or simply managing your money more effectively, an Instant Access Savings Account helps you keep your savings organised in one convenient place.
-
-
           </p>
 
           <p className="growth-note">
