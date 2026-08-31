@@ -5,17 +5,20 @@ const SavingsGrowthSection = () => {
     <section className="savings-growth">
       <div className="savings-growth-container">
         <div className="growth-content">
-          <h2>It all adds up fast</h2>
+          <h2>It all adds up</h2>
 
           <p className="growth-highlight">
-            If you deposit £1,000 at an interest rate of 4% AER
-            (variable), your balance would grow to £1,040 after
-            12 months.
+            Saving £1,000 is a simple way to set money aside for your future while keeping your funds secure and accessible when you need them. 
+          </p>
+
+          <p className="growth-highlight">
+Whether you're saving for a specific goal, building a financial cushion, or simply managing your money more effectively, an Instant Access Savings Account helps you keep your savings organised in one convenient place.
+
+
           </p>
 
           <p className="growth-note">
-            This example is for illustration only and does not
-            consider your personal circumstances.
+            This information is for illustration purposes only and does not consider your personal circumstances.
           </p>
         </div>
 
