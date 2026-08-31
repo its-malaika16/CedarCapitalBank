@@ -67,13 +67,13 @@
   line-height: 1.6;
 }
 
-.hero-features li::before {
+/* .hero-features li::before {
   content: "✓";
   position: absolute;
   left: 0;
   color: #ff3737;
   font-weight: bold;
-}
+} */
 
 /* =========================
    BUTTONS
