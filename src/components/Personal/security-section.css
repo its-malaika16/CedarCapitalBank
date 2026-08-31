@@ -31,7 +31,7 @@
 
 .security-content h2 {
   color: #173d6d;
-  font-size: clamp(2.2rem, 5vw, 4.8rem);
+  font-size: 50px;
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 24px;
@@ -41,7 +41,7 @@
   max-width: 850px;
 
   color: #173d6d;
-  font-size: clamp(1rem, 1.4vw, 1.3rem);
+  font-size: 20px;
   line-height: 1.7;
 
   margin-bottom: 30px;

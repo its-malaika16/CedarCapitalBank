@@ -124,6 +124,10 @@ max-width: 800px;
   .steps-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .section-heading h2{
+    font-size: 38px;
+  }
 }
 
 /* =========================
@@ -133,6 +137,10 @@ max-width: 800px;
 @media (max-width: 768px) {
   .get-started {
     padding: 70px 16px;
+  }
+
+  .section-heading h2{
+    font-size: 35px;
   }
 
   .section-heading {

@@ -11,7 +11,7 @@
 .account-features-container h2 {
   text-align: center;
   color: #173d6d;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 700;
   margin-bottom: 60px;
 }
@@ -116,6 +116,7 @@ color: var(--secondary);
   }
 
   .account-features-container h2 {
+    font-size: 35px;
     margin-bottom: 40px;
   }
 
@@ -146,7 +147,7 @@ color: var(--secondary);
 
 @media (max-width: 480px) {
   .account-features-container h2 {
-    font-size: 2rem;
+    font-size: 25px;
   }
 
   .account-feature-card h3 {

@@ -9,9 +9,7 @@ const BankingHeroSection = () => {
         </span>
 
         <h1>
-          Smooth, modern banking
-          <br />
-          designed for everyday life.
+          Smooth, modern banking designed for everyday life.
         </h1>
 
         <p>

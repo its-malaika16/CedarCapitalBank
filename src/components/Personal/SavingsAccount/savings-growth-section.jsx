@@ -8,11 +8,11 @@ const SavingsGrowthSection = () => {
           <h2>It all adds up</h2>
 
           <p className="growth-highlight">
-            Saving £1,000 is a simple way to set money aside for your future while keeping your funds secure and accessible when you need them. 
+            Saving £1,000 is a simple way to set money aside for your future while keeping your funds secure and accessible when you need them.
           </p>
 
           <p className="growth-highlight">
-Whether you're saving for a specific goal, building a financial cushion, or simply managing your money more effectively, an Instant Access Savings Account helps you keep your savings organised in one convenient place.
+            Whether you're saving for a specific goal, building a financial cushion, or simply managing your money more effectively, an Instant Access Savings Account helps you keep your savings organised in one convenient place.
           </p>
 
           <p className="growth-note">

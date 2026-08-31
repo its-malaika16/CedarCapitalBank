@@ -33,7 +33,7 @@
 
 .hero-content p {
   color: rgba(255, 255, 255, 0.95);
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   max-width: 650px;
   margin-bottom: 40px;
@@ -151,7 +151,7 @@
 
   .hero-content h1 {
     line-height: 1.15;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
 
   .hero-content p {
@@ -174,7 +174,7 @@
 
 @media (max-width: 480px) {
   .hero-content h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .hero-content p {

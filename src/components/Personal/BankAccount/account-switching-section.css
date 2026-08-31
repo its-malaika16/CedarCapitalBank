@@ -35,7 +35,7 @@
 
 .switching-content h2 {
   color: #ffffff;
-  font-size: 50px;
+  font-size: 48px;
   line-height: 1.1;
   font-weight: 700;
   margin-bottom: 28px;
@@ -87,6 +87,9 @@
 @media (max-width: 1200px) {
   .account-switching-container {
     gap: 50px;
+  }
+  .switching-content h2{
+    font-size: 35px;
   }
 }
 

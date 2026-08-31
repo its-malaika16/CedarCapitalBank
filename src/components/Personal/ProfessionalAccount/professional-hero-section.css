@@ -37,11 +37,12 @@
 
 .banking-hero h1 {
   color: #ffffff;
-  font-size: 60px;
+  font-size: 48px;
   line-height: 1.1;
   font-weight: 700;
   max-width: 700px;
   margin-bottom: 24px;
+  letter-spacing: 2;
 }
 
 .banking-hero p {
@@ -134,10 +135,11 @@
 
   .banking-hero h1 {
     margin-bottom: 18px;
+    font-size: 2.2rem;
   }
 
   .banking-hero p {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
   }
 
   .hero-btn {
@@ -163,7 +165,7 @@
   }
 
   .banking-hero p {
-    font-size: 0.95rem;
+    font-size: 15px;
   }
 
   .hero-btn {
