@@ -49,7 +49,7 @@
 }
 
 .security-list li::before {
-  content: "✓";
+  content: "\2713";
   position: absolute;
   left: 0;
   top: 0;

@@ -33,11 +33,11 @@ const TestimonialsSection = () => {
           </h2>
 
           <p>
-            How teams on Cedar Capital move money every single day.
+            Powering smarter financial management for businesses.
           </p>
         </div>
 
-        <div className="testimonial-list">
+        {/* <div className="testimonial-list">
           {testimonials.map((item, index) => (
             <div className="testimonial-card" key={index}>
               <p className="testimonial-quote">
@@ -58,7 +58,7 @@ const TestimonialsSection = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );
