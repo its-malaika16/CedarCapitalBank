@@ -294,7 +294,7 @@
 
 @media (max-width: 430px) {
 
-  *mv-row {
+  .mv-row {
     grid-template-columns: 60px 1fr;
     column-gap: 16px;
  }
