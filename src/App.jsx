@@ -10,6 +10,7 @@ import ProfesionalAccount from './pages/personal/professional-account';
 import SavingsAccount from './pages/personal/savings-account';
 import Business from './pages/business';
 import Footer from './components/Footer/footer';
+import About from './pages/about';
 // import Navbar from './components/Navbar/navbar.jsx';
 // import Home from './pages/home.jsx';
 // import Features from './pages/features.jsx';
@@ -36,6 +37,7 @@ function App() {
       <Route path = '/personal/professionalaccount' element = {<ProfesionalAccount />} />
       <Route path = '/personal/savingsaccount' element = {<SavingsAccount />} />
       <Route path = '/business' element = {<Business />} />
+      <Route path = '/about' element = {<About />} />
      </Routes>
       { /* <Routes>
         <Route path="/" element={<Home />} />

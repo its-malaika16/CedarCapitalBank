@@ -88,10 +88,10 @@ const Footer = () => {
             © 2026 Cedar Capital Bank. All rights reserved.
           </p>
 
-          <p>
+          {/* <p>
             Deposits protected up to £85,000 by the deposit
             guarantee scheme.
-          </p>
+          </p> */}
         </div>
 
       </div>

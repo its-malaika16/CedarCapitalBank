@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+.about-section {
+  width: 100%;
+  min-height: 550px;
+  padding: 60px 8.75%;
+  background-color: #f7f6f3;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about-card {
+  width: 100%;
+  max-width: 1260px;
+  min-height: 421px;
+  background-color: #1f4268;
+  border-radius: 21px;
+
+  display: flex;
+  align-items: center;
+}
+
+.about-content {
+  width: 100%;
+  padding: 70px 65px;
+}
+
+/* Small red text */
+.about-label {
+  margin: 0 0 18px;
+  color: #ed1c24;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* Main heading */
+.about-title {
+  max-width: 780px;
+  margin: 0;
+
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 34px;
+  line-height: 1.13;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+/* Description */
+.about-description {
+  max-width: 1050px;
+  margin: 25px 0 0;
+
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.35;
+  font-weight: 400;
+}
+
+/* Button */
+.about-button {
+  margin-top: 45px;
+  min-width: 112px;
+  height: 28px;
+
+  padding: 0 25px;
+
+  border: none;
+  border-radius: 999px;
+  background-color: #ed1c24;
+
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.about-button:hover {
+  background-color: #cf171e;
+  transform: translateY(-1px);
+}
+
+.about-button:active {
+  transform: translateY(0);
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .about-section {
+    padding: 40px 6%;
+    min-height: auto;
+  }
+
+  .about-card {
+    min-height: 400px;
+  }
+
+  .about-content {
+    padding: 60px 45px;
+  }
+
+  .about-title {
+    font-size: 30px;
+  }
+
+  .desktop-break {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .about-section {
+    padding: 25px 20px;
+  }
+
+  .about-card {
+    min-height: auto;
+    border-radius: 18px;
+  }
+
+  .about-content {
+    padding: 50px 28px;
+  }
+
+  .about-label {
+    font-size: 10px;
+    margin-bottom: 14px;
+  }
+
+  .about-title {
+    font-size: 27px;
+    line-height: 1.15;
+  }
+
+  .about-title br {
+    display: none;
+  }
+
+  .about-description {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .about-button {
+    margin-top: 32px;
+  }
+}
